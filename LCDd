@@ -22,7 +22,7 @@
 
 
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-DAEMON=/usr/sbin/LCDd
+DAEMON=/usr/local/sbin/LCDd
 NAME="LCDd"
 DESC="LCDd"
 
@@ -30,7 +30,7 @@ DESC="LCDd"
 # on terminal even if run in background. This spoils the installation fun.
 # So LCDd is configured to run in foreground and will be pushed
 # in background by stop-start-daemon
-DAEMON_OPTS="-s 1 -f -c /etc/LCDd.conf"
+DAEMON_OPTS="-s 1 -f -c /usr/local/etc/LCDd.conf"
 
 . /lib/lsb/init-functions
 
